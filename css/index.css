@@ -25,8 +25,8 @@ body {
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
     background-color:#E4E4E4;
+    background-image:-webkit-gradient(linear, left top, left bottom, from(top), color-stop(0%, #A7A7A7), color-stop(51%, #E4E4E4));
     background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
     background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
     background-image:-webkit-gradient(
         linear,
@@ -70,8 +70,8 @@ body {
 }
 
 h1 {
-    font-size:24px;
-    font-weight:normal;
+    font-size: 50px;
+    font-weight:lighter;
     margin:0px;
     overflow:visible;
     padding:0px;
@@ -112,4 +112,65 @@ h1 {
 .blink {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
+}
+
+/* My CSS */
+
+/* Ear rape */
+.ear-rape {
+    width: 185px;
+    margin: 0 auto;
+}
+
+.ear-rape img {
+    border: 2px solid #000;
+}
+
+/* Controls */
+.controls {
+    width: 250px;
+    height: 245px;
+    position: absolute;
+    left: 55px;
+    bottom: 0;
+}
+
+img {
+    height: 75px;
+    width: 75px;
+}
+
+img:active {
+    margin-top: 1px;
+}
+
+#forward {
+    position: absolute;
+    top: 0;
+    left: 88px;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+#right {
+    position: absolute;
+    right: 0;
+    top: 85px;
+}
+
+#backward {
+    position: absolute;
+    bottom: 0;
+    left: 36px;
+    left: 88px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+#left {
+    position: absolute;
+    left: 0px;
+    top: 85px;
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
 }
